@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "nav header"
+                         "nav content";
+}
+
+header {
+    grid-area: header;
+    background-color: #fefefe;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #2196f3;
+}
+
+div.content {
+    grid-area: content;
+    background-color: #f6f6f6;
+}
