@@ -13,7 +13,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4.5fr;
-    grid-template-rows: 1.2fr 5fr;
+    grid-template-rows: 1fr 6fr;
     grid-template-areas: "nav header"
                          "nav content";
 }
@@ -80,6 +80,30 @@ div.header-top-right > span {
 
 div.header-top-right > p {
     font-weight: 600;
+}
+
+div.greeting {
+    padding: 10px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 5px;
+}
+
+div.greeting img {
+    grid-row: 1 / -1;
+}
+
+div.greeting p:first-of-type {
+    align-self: end;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+div.greeting p:last-of-type {
+    font-size: 1.6rem;
+    font-weight: 800;
 }
 
 /* -------------------- */
