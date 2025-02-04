@@ -21,6 +21,7 @@ body {
 header {
     grid-area: header;
     background-color: #fefefe;
+    padding-bottom: 10px;
 
     display: grid;
     grid-template-columns: 7fr repeat(3, 1.3fr);
@@ -34,11 +35,6 @@ div.search-bar {
     align-items: center;
     gap: 0.7rem;
 
-}
-
-header div {
-    /* temporary */
-    border: 1px solid black;
 }
 
 div.search-bar label {
@@ -64,11 +60,11 @@ div.search-bar input[type="search"]:focus {
 
 div.header-top-right {
     grid-column: 2 / -1;
-    padding: 10px 30px;
+    padding: 10px 40px;
     font-size: 1.3rem;
 
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 1rem;
 }
