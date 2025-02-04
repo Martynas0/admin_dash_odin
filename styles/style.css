@@ -13,7 +13,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4.5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1.2fr 5fr;
     grid-template-areas: "nav header"
                          "nav content";
 }
@@ -21,11 +21,57 @@ body {
 header {
     grid-area: header;
     background-color: #fefefe;
+
+    display: grid;
+    grid-template-columns: 7fr repeat(3, 1.3fr);
+    grid-template-rows: 1fr 1fr;
 }
+
+div.search-bar {
+    padding: 8px 20px;
+    
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+}
+
+header div {
+    /* temporary */
+    border: 1px solid black;
+}
+
+div.search-bar label {
+   font-size: 2rem;
+}
+
+div.search-bar input[type="search"] {
+    flex: 1;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    background-color: #e0e0e0;
+    border-radius: 14px;
+}
+
+div.search-bar input[type="search"]:focus {
+    outline: 1px solid #2191e9;
+    box-shadow: 1px 2px 8px #2191e9;
+    background-color: #eaeaea;
+}
+
+div.header-top-right {
+    grid-column: 2 / -1;
+
+}
+
+/* -------------------- */
 
 nav {
     grid-area: nav;
-    background-color: #2196f3;
+    background-color: #2191e9;
     color: white;
     font-size: 20px;
 }
@@ -51,7 +97,12 @@ ul.side-nav {
 
 ul.side-nav li {
     padding: 8px 20px;
-    font-weight: bold;
+    font-weight: 600;
+}
+
+ul.side-nav li:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 ul.side-nav li.gap-above {
