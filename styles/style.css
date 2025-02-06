@@ -7,6 +7,7 @@
 
 :root {
     font-size: 16px;
+    line-height: 1.5;
 }
 
 body {
@@ -176,8 +177,9 @@ div.content {
     padding: 15px;
 
     display: grid;
-    grid-template-columns: 2.7fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
 
 h4.content-heading {
@@ -228,4 +230,31 @@ div.projects {
 
 .card .mdi-share-variant-outline {
     grid-area: share;
+}
+
+div.announcements {
+    display: grid;
+    grid-template-rows: 1.2rem 1fr;
+    gap: 20px;
+}
+
+div.announcement-card {
+    background-color: white;
+    padding: 24px 20px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 5px lightgray;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+div.announcement-card h6 {
+    font-size: 0.9rem;
+}
+
+div.announcement-card p {
+    font-size: 0.7rem;
+    color: gray;
 }
