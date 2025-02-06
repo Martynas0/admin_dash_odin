@@ -211,13 +211,24 @@ div.projects {
                          ". like watch share";
 }
 
+.card h5 {
+    font-size: 1.2rem;
+}
+
 .card p{
     grid-area: description;
+    font-size: 0.9rem;
+    color: gray;
 }
 
 .card > span {
     justify-self: end;
     align-self: center;
+}
+
+.card > span:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .card .mdi-heart-outline {
