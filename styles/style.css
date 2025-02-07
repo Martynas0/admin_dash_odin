@@ -355,5 +355,44 @@ div.tr-project p:last-of-type {
         grid-row: 2;
     }
 
+    /* Content ------------------- */
 
+    /* Trending ------- */
+
+    div.trending {
+        grid-row: 1;
+        grid-column: 1 / -1;
+    }
+
+    div.trending-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+        grid-template-rows: min-content;
+    }
+
+    div.tr-project {
+        grid-template-columns: 1fr;
+        grid-template-rows: 64px 1fr;
+        row-gap: 10px;
+    }
+
+    div.tr-project img {
+        justify-self: center;
+    }
+
+    div.tr-project p:first-of-type {
+        display: none;
+    }
+
+    div.tr-project p:last-of-type {
+        text-align: center;
+    }
+    
+    
+
+    /* Projects ----- */
+
+    div.projects {
+        grid-row: 2;
+    }
 }
