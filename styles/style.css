@@ -355,7 +355,17 @@ div.tr-project p:last-of-type {
         grid-row: 2;
     }
 
+    div.search-bar input[type="search"] {
+        min-width: 100px;
+    }
+
+
     /* Content ------------------- */
+    
+    div.content {
+        grid-template-rows: min-content 1fr min-content;
+        grid-template-columns: 1fr;
+    }
 
     /* Trending ------- */
 
@@ -394,5 +404,5 @@ div.tr-project p:last-of-type {
 
     div.projects {
         grid-row: 2;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
-}
