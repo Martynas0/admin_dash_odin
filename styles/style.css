@@ -13,7 +13,7 @@
 body {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: min-content 1fr;
     grid-template-rows: min-content 1fr;
     grid-template-areas: "nav header"
                          "nav content";
@@ -165,7 +165,7 @@ ul.side-nav li.gap-above {
     margin-top: 2rem;
 }
 
-ul.side-nav li > span {
+ul.side-nav li > span.mdi {
     margin-right: 20px;
 }
 
@@ -314,6 +314,46 @@ div.tr-project p:last-of-type {
 
 @media (max-width: 760px) {
     
-  
+    /* Navigation ----------- */
+
+    ul.side-nav li > span:last-child,
+    nav h3 {
+        display: none;
+    }
+
+    nav .nav-heading > span {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    ul.side-nav li > span.mdi {
+        margin: 0;
+    }
+
+    ul.side-nav li {
+        text-align: center;
+    }
+
+    /* Header ------- */
+
+    div.greeting {
+        display: none;
+    }
+
+    button.header-btn {
+        display: none;
+    }
+
+    div.header-top-right {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        justify-content: center;
+    }
+
+    div.search-bar {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
 
 }
